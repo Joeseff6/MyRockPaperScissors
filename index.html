@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=`en`>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=`UTF-8`>
+    <meta name=`viewport` content=`width=device-width, initial-scale=1.0`>
     <title>Rock Paper Scissors</title>
 </head>
 
@@ -20,21 +20,34 @@
         var playerscore = 0;
         var computerscore = 0;
         /* Make variable for number of rounds */
-        var rounds = prompt("Choose a number of rounds to win:");
+        var rounds = prompt(`Choose a number of rounds to win:`);
         /* Have player make choice */
-        var playerchoice = prompt("Choose rock, paper, or scissors:");
+        var playerchoice = prompt(`Choose rock, paper, or scissors:`);
         var playerchoice = playerchoice.toLowerCase();
         /* Have computer randomly choose */
-        var rps = ["rock", "paper", "scissors"];
+        var rps = [`rock`, `paper`, `scissors`];
         var computerchoice = rps[Math.floor(Math.random() * 3)];
 
         /* Make loop to run through a round */
 
 /*         for (i = 0; playerscore < rounds || computerscore < rounds; i++) {
-            if (player choice )
-        }
- */
+            if (playerchoice === `rock` && computerchoice === `rock`) {
+                alert(`It's a tie!`);
+                var playerchoice = prompt(`Choose rock, paper, or scissors:`);
+                var computerchoice = rps[Math.floor(Math.random() * 3)];
+            } else if (playerchoice === `rock` && computerchoice === `paper`) {
+                alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`)
+                
+            } else {
 
+            }
+
+            
+
+        } */
+
+
+        alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`)
 
 
 
@@ -44,6 +57,7 @@
         console.log(rounds);
         console.log(playerchoice);
         console.log(computerchoice);
+        console.log(`Player's score is `  + playerscore + `, Computer's score is ` + computerscore);
 
 
 
