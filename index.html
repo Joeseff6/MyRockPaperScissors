@@ -49,8 +49,14 @@
                 playerscore++;
                 alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             } else {
-                alert(`It's a tie!\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`)
+                alert(`It's a tie!\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             }
+        }
+
+        if (playerscore > computerscore) {
+            alert(`Player wins!`);
+        } else {
+            alert(`Computer wins!`);
         }
 
 
