@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <script>
+        /* Set variables for rock paper scissors */
+/*         If player wins, 1+ to playerscore
+        If computer wins, 1+ to computerscore
+        If tie, nothing happens
+        re-run loop until either score = number of rounds
+        during iterations, show both player and computer score
+        display final scores and winner at end of game */
+
+        /* Set player scores to zero */
+        var playerscore = 0;
+        var computerscore = 0;
+        /* Make variable for number of rounds */
+        var rounds = prompt("Choose a number of rounds to win:");
+        /* Have player make choice */
+        var playerchoice = prompt("Choose rock, paper, or scissors:");
+        /* Have computer randomly choose */
+        var rps = ["rock", "paper", "scissors"];
+        var computerchoice = rps[Math.floor(Math.random() * 3)];
+
+        /* Make loop to run through a round */
+
+/*         for (i = 0; playerscore < rounds || computerscore < rounds; i++) {
+        } */
+
+
+
+
+        /* Show outputs in console log for verification */
+        console.log(playerscore);
+        console.log(computerscore);
+        console.log(rounds);
+        console.log(playerchoice);
+        console.log(computerchoice);
+
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
