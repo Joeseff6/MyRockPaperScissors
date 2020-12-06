@@ -8,20 +8,12 @@
 
 <body>
     <script>
-        /* Set variables for rock paper scissors */
-/*         If player wins, 1+ to playerscore
-        If computer wins, 1+ to computerscore
-        If tie, nothing happens
-        re-run loop until either score = number of rounds
-        during iterations, show both player and computer score
-        display final scores and winner at end of game */
-
         /* Set player scores to zero */
         var playerscore = 0;
         var computerscore = 0;
         /* Make variable for number of rounds */
-        var rounds = parseInt(prompt(`Choose a number of rounds to win:`));
-        /* Have player make choice */
+        var rounds = prompt(`Choose a number of rounds to win (decimals will round down):`);
+
         /* Make an Array for computer to choose from */
         var rps = [`rock`, `paper`, `scissors`];
 
@@ -29,26 +21,35 @@
         while (playerscore < rounds && computerscore < rounds) {
             var playerchoice = prompt(`Choose rock, paper, or scissors:`);
             var computerchoice = rps[Math.floor(Math.random() * 3)];
-            /* Conditions when player = rock */
+            /* Win/Loss conditions when player = rock */
             if (playerchoice === `rock` && computerchoice === `paper`) {
                 computerscore++;
                 alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
-            } else if (playerchoice === `rock` && computerchoice === `scissors`) {
+            } 
+            else if (playerchoice === `rock` && computerchoice === `scissors`) {
                 playerscore++;
                 alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
-            } else if (playerchoice === `paper` && computerchoice === `scissors`) {
+            }
+            /* Win/Loss conditions when player = paper */ 
+            else if (playerchoice === `paper` && computerchoice === `scissors`) {
                 computerscore++;
                 alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
-            } else if (playerchoice === `paper` && computerchoice === `rock`) {
+            } 
+            else if (playerchoice === `paper` && computerchoice === `rock`) {
                 playerscore++;
                 alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
-            } else if (playerchoice === `scissors` && computerchoice === `rock`) {
+            } 
+            /* Win/Loss conditions when player = scissors */ 
+            else if (playerchoice === `scissors` && computerchoice === `rock`) {
                 computerscore++;
                 alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
-            } else if (playerchoice === `scissors` && computerchoice === `paper`) {
+            } 
+            else if (playerchoice === `scissors` && computerchoice === `paper`) {
                 playerscore++;
                 alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
-            } else {
+            } 
+            /* Condition when player = computer */ 
+            else {
                 alert(`It's a tie!\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             }
         }
