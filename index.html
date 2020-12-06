@@ -29,23 +29,42 @@
         var computerchoice = rps[Math.floor(Math.random() * 3)];
 
         /* Make loop to run through a round */
-/*         for (i = 0; playerscore < rounds || computerscore < rounds; i++) {
+        debugger
+        while (playerscore < rounds && computerscore < rounds) {
+            /* Conditions when player = rock */
             if (playerchoice === `rock` && computerchoice === `rock`) {
                 alert(`It's a tie!`);
                 var playerchoice = prompt(`Choose rock, paper, or scissors:`);
                 var computerchoice = rps[Math.floor(Math.random() * 3)];
             } else if (playerchoice === `rock` && computerchoice === `paper`) {
-                computerscore++
-                alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`)
+                computerscore++;
+                alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`);
                 var playerchoice = prompt(`Choose rock, paper, or scissors:`);
                 var computerchoice = rps[Math.floor(Math.random() * 3)];
             } else {
-                playerscore++
-                alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`)
+                playerscore++;
+                alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`);
                 var playerchoice = prompt(`Choose rock, paper, or scissors:`);
                 var computerchoice = rps[Math.floor(Math.random() * 3)];
             }
-        } */
+
+            /* Conditions when player = paper */
+/*             if (playerchoice === `paper` && computerchoice === `rock`) {
+                alert(`It's a tie!`);
+                var playerchoice = prompt(`Choose rock, paper, or scissors:`);
+                var computerchoice = rps[Math.floor(Math.random() * 3)];
+            } else if (playerchoice === `paper` && computerchoice === `paper`) {
+                computerscore++;
+                alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`);
+                var playerchoice = prompt(`Choose rock, paper, or scissors:`);
+                var computerchoice = rps[Math.floor(Math.random() * 3)];
+            } else {
+                playerscore++;
+                alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.`);
+                var playerchoice = prompt(`Choose rock, paper, or scissors:`);
+                var computerchoice = rps[Math.floor(Math.random() * 3)];
+            } */
+        }
 
 
 
