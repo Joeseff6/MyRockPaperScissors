@@ -24,33 +24,33 @@
             /* Win/Loss conditions when player = rock */
             if (playerchoice === `rock` && computerchoice === `paper`) {
                 computerscore++;
-                alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
+                alert(`You chose ${playerchoice}, while Computer chose ${computerchoice}.\nComputer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             } 
             else if (playerchoice === `rock` && computerchoice === `scissors`) {
                 playerscore++;
-                alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
+                alert(`You chose ${playerchoice}, while Computer chose ${computerchoice}.\nPlayer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             }
             /* Win/Loss conditions when player = paper */ 
             else if (playerchoice === `paper` && computerchoice === `scissors`) {
                 computerscore++;
-                alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
+                alert(`You chose ${playerchoice}, while Computer chose ${computerchoice}.\nComputer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             } 
             else if (playerchoice === `paper` && computerchoice === `rock`) {
                 playerscore++;
-                alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
+                alert(`You chose ${playerchoice}, while Computer chose ${computerchoice}.\nPlayer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             } 
             /* Win/Loss conditions when player = scissors */ 
             else if (playerchoice === `scissors` && computerchoice === `rock`) {
                 computerscore++;
-                alert(`Computer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
+                alert(`You chose ${playerchoice}, while Computer chose ${computerchoice}.\nComputer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             } 
             else if (playerchoice === `scissors` && computerchoice === `paper`) {
                 playerscore++;
-                alert(`Player wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
+                alert(`You chose ${playerchoice}, while Computer chose ${computerchoice}.\nPlayer wins this round.\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             } 
             /* Condition when player = computer */ 
             else {
-                alert(`It's a tie!\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
+                alert(`You chose ${playerchoice}, while Computer chose ${computerchoice}.\nIt's a tie!\nPlayer score is ${playerscore}, Computer score is ${computerscore}.\nRounds to win: ${rounds}`);
             }
         }
 
