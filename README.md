@@ -2,6 +2,7 @@
 
 ## Game Link
 
+https://joeseff6.github.io/MyRockPaperScissors/
 
 ## Purpose of this project
 
@@ -12,4 +13,4 @@ My version of rock-paper-scissors against a computer. This project is an activit
 This game can be played by going to the deployed 
 ## Future Updates
 
-I plan to come back to the game
+I plan to
