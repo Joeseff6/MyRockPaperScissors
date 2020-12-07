@@ -23,3 +23,8 @@ In future releases, I plan to update the game to:
 
 ### Screenshots of Current Release:
 
+![Choosing the number of rounds to win.](/Images/Rounds.PNG)
+![Player making their choice of rock, paper, or scissors.](/Images/Rounds.PNG)
+![Condition when Player and Computer make their choices, an alert will show.](/Images/Rounds.PNG)
+![Final alert message that shows when a Player or Computer wins.](/Images/Rounds.PNG)
+![Alert message showing who the winner is.](/Images/Rounds.PNG)
